@@ -986,6 +986,7 @@ ul {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+  /* appearance: none; */
 }
 
 .custom-checkbox {
@@ -1000,13 +1001,13 @@ ul {
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
 
-  outline: none;
+  /* outline: none; */
   cursor: pointer;
 }
 
-.form-checkbox-mark:focus + .custom-checkbox {
+/* .form-checkbox-mark:focus + .custom-checkbox {
   outline: 3px solid #000000;
-}
+} */
 
 .form-checkbox-mark:checked + .custom-checkbox {
   background-color: var(--accent-color);
