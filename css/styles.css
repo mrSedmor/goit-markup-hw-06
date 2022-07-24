@@ -964,14 +964,14 @@ ul {
   letter-spacing: 0.03em;
   color: #757575;
 
-  border: 1px solid transparent;
+  /* border: 1px solid transparent;
   border-radius: 4px;
-  transition: border-color 250ms var(--timing-function);
+  transition: border-color 250ms var(--timing-function); */
 }
-
+/* 
 .form-checkbox:focus-within {
   border-color: var(--accent-color);
-}
+} */
 
 .form-checkbox-mark {
   position: absolute;
