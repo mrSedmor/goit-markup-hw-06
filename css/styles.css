@@ -975,6 +975,8 @@ ul {
 
 .form-checkbox-mark {
   position: absolute;
+  left: 21px;
+  top: 50%;
   width: 1px;
   height: 1px;
   margin: -1px;
