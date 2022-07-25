@@ -692,22 +692,20 @@ ul {
 
 .footer-social-list {
   --item-size: 44px;
-  --item-count: 4;
   --item-gap: 10px;
   display: flex;
   margin-top: 20px;
-  width: calc(var(--item-size) * var(--item-count) + var(--item-gap) * (var(--item-count) - 1));
+  margin-left: calc(-1 * var(--item-gap));
+  /* column-gap: var(--item-gap); */
 }
 
 .footer-social-item {
-  flex-basis: var(--item-size);
+  width: var(--item-size);
   height: var(--item-size);
+  margin-left: var(--item-gap);
   /* flex-shrink: 0; */
 }
 
-.footer-social-item:not(:first-child) {
-  margin-left: var(--item-gap);
-}
 .footer-social-link {
   display: flex;
   width: 100%;
@@ -830,6 +828,7 @@ ul {
 
   color: #000000;
 
+  background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
@@ -1001,13 +1000,13 @@ ul {
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
 
-  /* outline: none; */
+  outline: 3px solid transparent;
   cursor: pointer;
 }
 
-/* .form-checkbox-mark:focus + .custom-checkbox {
-  outline: 3px solid #000000;
-} */
+.form-checkbox-mark:focus + .custom-checkbox {
+  outline-color: #000000;
+}
 
 .form-checkbox-mark:checked + .custom-checkbox {
   background-color: var(--accent-color);
