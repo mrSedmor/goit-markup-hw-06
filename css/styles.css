@@ -967,6 +967,7 @@ ul {
   border-radius: 4px;
   transition: border-color 250ms var(--timing-function); */
 }
+
 /* 
 .form-checkbox:focus-within {
   border-color: var(--accent-color);
@@ -1000,7 +1001,7 @@ ul {
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
 
-  outline: 3px solid transparent;
+  outline: 2px solid transparent;
   cursor: pointer;
 }
 
